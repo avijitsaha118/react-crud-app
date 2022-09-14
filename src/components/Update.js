@@ -17,6 +17,7 @@ const Update = () => {
         setName(e.target.value);
         const updatedName = name;
         user[0].name = updatedName;
+       
     }
     const handleUpdateProfession = e => {
         setProfession(e.target.value);
@@ -40,12 +41,7 @@ const Update = () => {
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>ID no: {user[0].id}</Form.Label>
-                    <Form.Control type="number"
-                        name='id' value={id}
-                        placeholder={user[0].id} />
-                    <Form.Text className="text-muted">
-                        Please Enter a valid ID.
-                    </Form.Text>
+
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -66,11 +62,11 @@ const Update = () => {
                         name='age' value={age} onChange={handleUpdateAge}
                         placeholder={user[0].age} />
                 </Form.Group>
-                <Link to='/'>
+               
                     <Button onSubmit={() => handleUpdateForm} variant="primary" type="submit">
                         Submit
                     </Button>
-
+                    <Link to='/'>
                     <Button variant="primary" type="submit">
                         Home
                     </Button>

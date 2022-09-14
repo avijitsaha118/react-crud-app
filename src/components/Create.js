@@ -29,8 +29,8 @@ const Create = () => {
 
     const handleSubmitForm = e => {
         e.preventDefault();
-        setUsers([...users,{id: id, name: name, profession: profession, age: age}])
-   
+        setUsers([...users, { id: id, name: name, profession: profession, age: age }])
+
     }
 
     return (
